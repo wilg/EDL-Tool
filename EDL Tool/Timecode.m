@@ -81,8 +81,8 @@
     return [self absoluteTime] <= [otherTimecode absoluteTime];
 }
 
--(long)absoluteTime {
-    return (long)((double)self.frameNumber / (double)self.frameRate);
+-(double)absoluteTime {
+    return (double)((double)self.frameNumber / (double)self.frameRate);
 }
 
 #pragma mark Frame Number

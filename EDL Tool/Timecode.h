@@ -40,6 +40,6 @@
 -(BOOL)isLessThanOrEqualToTimecode:(Timecode *)otherTimecode;
 
 // The time in seconds this timecode represents. Depends on frame rate.
--(long)absoluteTime;
+-(double)absoluteTime;
 
 @end
