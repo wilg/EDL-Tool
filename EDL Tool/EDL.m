@@ -27,6 +27,12 @@
     
     for (NSString *line in [string componentsSeparatedByString:@"\n"]) {
         NSString *trimmedLine = [line stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+        // Get rid of the diamonds!
+        trimmedLine = [trimmedLine stringByReplacingOccurrencesOfString:@"\0" withString:@""];
+        trimmedLine = [trimmedLine stringByReplacingOccurrencesOfString:@"" withString:@""];
+
+        NSLog(@"parsing line: %@", trimmedLine);
+        
         BOOL blank = NO;
         if ([line stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length == 0) {
             blank = YES;
@@ -40,7 +46,7 @@
         if (!blank) {
             if (doneWithHeader) {
                 
-                if ([[trimmedLine substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"*"]) {
+                if (trimmedLine.length > 2 && [[trimmedLine substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"*"]) {
                     // Parse as a comment
                     EDLEvent *lastEvent = [edl.events lastObject];
                     if (lastEvent) {
@@ -48,7 +54,7 @@
                     }
                     
                 }
-                else {
+                else if (trimmedLine.length > 10) {
                     
                     // parse events
                     EDLEvent *thisEvent = [[EDLEvent alloc] init];
