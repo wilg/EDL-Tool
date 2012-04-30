@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B60B18C154E540B0004799F /* TimecodeValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60B18B154E540B0004799F /* TimecodeValueTransformer.m */; };
 		58BDF881154E2D4D004E9C49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BDF880154E2D4D004E9C49 /* Cocoa.framework */; };
 		58BDF88B154E2D4D004E9C49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF889154E2D4D004E9C49 /* InfoPlist.strings */; };
 		58BDF88D154E2D4E004E9C49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF88C154E2D4D004E9C49 /* main.m */; };
@@ -21,8 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B60B18A154E540B0004799F /* TimecodeValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimecodeValueTransformer.h; sourceTree = "<group>"; };
-		3B60B18B154E540B0004799F /* TimecodeValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimecodeValueTransformer.m; sourceTree = "<group>"; };
 		58BDF87C154E2D4D004E9C49 /* EDL Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EDL Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BDF880154E2D4D004E9C49 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		58BDF883154E2D4D004E9C49 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -57,6 +54,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BC06D9D154F347B00B4B8C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58BDF8A0154E2E08004E9C49 /* EDL.h */,
+				58BDF8A1154E2E08004E9C49 /* EDL.m */,
+				58BDF8AB154E37AC004E9C49 /* EDLEvent.h */,
+				58BDF8AC154E37AC004E9C49 /* EDLEvent.m */,
+				58BDF8AE154E39D9004E9C49 /* Timecode.h */,
+				58BDF8AF154E39D9004E9C49 /* Timecode.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		58BDF871154E2D4D004E9C49 = {
 			isa = PBXGroup;
 			children = (
@@ -100,15 +110,8 @@
 				58BDF893154E2D4E004E9C49 /* EDLDocument.m */,
 				58BDF895154E2D4E004E9C49 /* EDLDocument.xib */,
 				58BDF898154E2D4E004E9C49 /* MainMenu.xib */,
+				3BC06D9D154F347B00B4B8C9 /* Models */,
 				58BDF887154E2D4D004E9C49 /* Supporting Files */,
-				58BDF8A0154E2E08004E9C49 /* EDL.h */,
-				58BDF8A1154E2E08004E9C49 /* EDL.m */,
-				58BDF8AB154E37AC004E9C49 /* EDLEvent.h */,
-				58BDF8AC154E37AC004E9C49 /* EDLEvent.m */,
-				58BDF8AE154E39D9004E9C49 /* Timecode.h */,
-				58BDF8AF154E39D9004E9C49 /* Timecode.m */,
-				3B60B18A154E540B0004799F /* TimecodeValueTransformer.h */,
-				3B60B18B154E540B0004799F /* TimecodeValueTransformer.m */,
 			);
 			path = "EDL Tool";
 			sourceTree = "<group>";
@@ -195,7 +198,6 @@
 				58BDF8A2154E2E08004E9C49 /* EDL.m in Sources */,
 				58BDF8AD154E37AC004E9C49 /* EDLEvent.m in Sources */,
 				58BDF8B0154E39D9004E9C49 /* Timecode.m in Sources */,
-				3B60B18C154E540B0004799F /* TimecodeValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
