@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58BDF881154E2D4D004E9C49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BDF880154E2D4D004E9C49 /* Cocoa.framework */; };
+		58BDF88B154E2D4D004E9C49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF889154E2D4D004E9C49 /* InfoPlist.strings */; };
+		58BDF88D154E2D4E004E9C49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF88C154E2D4D004E9C49 /* main.m */; };
+		58BDF891154E2D4E004E9C49 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF88F154E2D4E004E9C49 /* Credits.rtf */; };
+		58BDF894154E2D4E004E9C49 /* TTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF893154E2D4E004E9C49 /* TTDocument.m */; };
+		58BDF897154E2D4E004E9C49 /* TTDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF895154E2D4E004E9C49 /* TTDocument.xib */; };
+		58BDF89A154E2D4E004E9C49 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF898154E2D4E004E9C49 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58BDF87C154E2D4D004E9C49 /* EDL Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EDL Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BDF880154E2D4D004E9C49 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		58BDF883154E2D4D004E9C49 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		58BDF884154E2D4D004E9C49 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		58BDF885154E2D4D004E9C49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58BDF888154E2D4D004E9C49 /* EDL Tool-Info.plist */ = {isa = PBXFileReference; path = "EDL Tool-Info.plist"; sourceTree = "<group>"; };
+		58BDF88A154E2D4D004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58BDF88C154E2D4D004E9C49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58BDF88E154E2D4E004E9C49 /* EDL Tool-Prefix.pch */ = {isa = PBXFileReference; path = "EDL Tool-Prefix.pch"; sourceTree = "<group>"; };
+		58BDF890154E2D4E004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		58BDF892154E2D4E004E9C49 /* TTDocument.h */ = {isa = PBXFileReference; path = TTDocument.h; sourceTree = "<group>"; };
+		58BDF893154E2D4E004E9C49 /* TTDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTDocument.m; sourceTree = "<group>"; };
+		58BDF896154E2D4E004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTDocument.xib; sourceTree = "<group>"; };
+		58BDF899154E2D4E004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58BDF879154E2D4D004E9C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BDF881154E2D4D004E9C49 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58BDF871154E2D4D004E9C49 = {
+			isa = PBXGroup;
+			children = (
+				58BDF886154E2D4D004E9C49 /* EDL Tool */,
+				58BDF87F154E2D4D004E9C49 /* Frameworks */,
+				58BDF87D154E2D4D004E9C49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58BDF87D154E2D4D004E9C49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58BDF87C154E2D4D004E9C49 /* EDL Tool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58BDF87F154E2D4D004E9C49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58BDF880154E2D4D004E9C49 /* Cocoa.framework */,
+				58BDF882154E2D4D004E9C49 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58BDF882154E2D4D004E9C49 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58BDF883154E2D4D004E9C49 /* AppKit.framework */,
+				58BDF884154E2D4D004E9C49 /* CoreData.framework */,
+				58BDF885154E2D4D004E9C49 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		58BDF886154E2D4D004E9C49 /* EDL Tool */ = {
+			isa = PBXGroup;
+			children = (
+				58BDF892154E2D4E004E9C49 /* TTDocument.h */,
+				58BDF893154E2D4E004E9C49 /* TTDocument.m */,
+				58BDF895154E2D4E004E9C49 /* TTDocument.xib */,
+				58BDF898154E2D4E004E9C49 /* MainMenu.xib */,
+				58BDF887154E2D4D004E9C49 /* Supporting Files */,
+			);
+			path = "EDL Tool";
+			sourceTree = "<group>";
+		};
+		58BDF887154E2D4D004E9C49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58BDF888154E2D4D004E9C49 /* EDL Tool-Info.plist */,
+				58BDF889154E2D4D004E9C49 /* InfoPlist.strings */,
+				58BDF88C154E2D4D004E9C49 /* main.m */,
+				58BDF88E154E2D4E004E9C49 /* EDL Tool-Prefix.pch */,
+				58BDF88F154E2D4E004E9C49 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58BDF87B154E2D4D004E9C49 /* EDL Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58BDF89D154E2D4E004E9C49 /* Build configuration list for PBXNativeTarget "EDL Tool" */;
+			buildPhases = (
+				58BDF878154E2D4D004E9C49 /* Sources */,
+				58BDF879154E2D4D004E9C49 /* Frameworks */,
+				58BDF87A154E2D4D004E9C49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EDL Tool";
+			productName = "EDL Tool";
+			productReference = 58BDF87C154E2D4D004E9C49 /* EDL Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58BDF873154E2D4D004E9C49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TT;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 58BDF876154E2D4D004E9C49 /* Build configuration list for PBXProject "EDL Tool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58BDF871154E2D4D004E9C49;
+			productRefGroup = 58BDF87D154E2D4D004E9C49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58BDF87B154E2D4D004E9C49 /* EDL Tool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58BDF87A154E2D4D004E9C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BDF88B154E2D4D004E9C49 /* InfoPlist.strings in Resources */,
+				58BDF891154E2D4E004E9C49 /* Credits.rtf in Resources */,
+				58BDF897154E2D4E004E9C49 /* TTDocument.xib in Resources */,
+				58BDF89A154E2D4E004E9C49 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58BDF878154E2D4D004E9C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BDF88D154E2D4E004E9C49 /* main.m in Sources */,
+				58BDF894154E2D4E004E9C49 /* TTDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58BDF889154E2D4D004E9C49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BDF88A154E2D4D004E9C49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58BDF88F154E2D4E004E9C49 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BDF890154E2D4E004E9C49 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		58BDF895154E2D4E004E9C49 /* TTDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BDF896154E2D4E004E9C49 /* en */,
+			);
+			name = TTDocument.xib;
+			sourceTree = "<group>";
+		};
+		58BDF898154E2D4E004E9C49 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BDF899154E2D4E004E9C49 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58BDF89B154E2D4E004E9C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		58BDF89C154E2D4E004E9C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		58BDF89E154E2D4E004E9C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EDL Tool/EDL Tool-Prefix.pch";
+				INFOPLIST_FILE = "EDL Tool/EDL Tool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58BDF89F154E2D4E004E9C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EDL Tool/EDL Tool-Prefix.pch";
+				INFOPLIST_FILE = "EDL Tool/EDL Tool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58BDF876154E2D4D004E9C49 /* Build configuration list for PBXProject "EDL Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BDF89B154E2D4E004E9C49 /* Debug */,
+				58BDF89C154E2D4E004E9C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58BDF89D154E2D4E004E9C49 /* Build configuration list for PBXNativeTarget "EDL Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BDF89E154E2D4E004E9C49 /* Debug */,
+				58BDF89F154E2D4E004E9C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58BDF873154E2D4D004E9C49 /* Project object */;
+}
