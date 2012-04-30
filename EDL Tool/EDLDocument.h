@@ -1,5 +1,5 @@
 //
-//  TTDocument.h
+//  EDLDocument.h
 //  EDL Tool
 //
 //  Created by Tashi Trieu on 4/29/12.
@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "EDL.h"
 
-@interface TTDocument : NSDocument
+@interface EDLDocument : NSDocument
+
+@property (retain) EDL *edl;
 
 @end

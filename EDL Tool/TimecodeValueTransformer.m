@@ -1,12 +1,12 @@
-#import "MocoDriverStatusValueTransformer.h"
-#import "MocoDriver.h"
+#import "TimecodeValueTransformer.h"
+#import "Timecode.h"
 
-@implementation MocoDriverStatusValueTransformer
+@implementation TimecodeValueTransformer
 
 
 + (void) initialize
 {
-    [NSValueTransformer setValueTransformer:[[self alloc] init] forName:@"MocoDriverStatusValueTransformer"];
+    [NSValueTransformer setValueTransformer:[[self alloc] init] forName:@"TimecodeValueTransformer"];
 }
 
 + (Class)transformedValueClass
@@ -21,7 +21,7 @@
 
 - (id)transformedValue:(id)value
 {
-    return (value == nil) ? nil : [[MocoDriver statusDescriptionForStatusCode:[value intValue]] uppercaseString];
+    return (value == nil) ? nil : [value description];
 }
 
 

@@ -1,7 +1,6 @@
 #import <Cocoa/Cocoa.h>
 
-@interface MocoDriverStatusValueTransformer : NSValueTransformer
-{
-}
+@interface TimecodeValueTransformer : NSValueTransformer
+
 
 @end

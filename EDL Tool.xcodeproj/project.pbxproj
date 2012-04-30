@@ -7,30 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B60B18C154E540B0004799F /* TimecodeValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60B18B154E540B0004799F /* TimecodeValueTransformer.m */; };
 		58BDF881154E2D4D004E9C49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BDF880154E2D4D004E9C49 /* Cocoa.framework */; };
 		58BDF88B154E2D4D004E9C49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF889154E2D4D004E9C49 /* InfoPlist.strings */; };
 		58BDF88D154E2D4E004E9C49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF88C154E2D4D004E9C49 /* main.m */; };
 		58BDF891154E2D4E004E9C49 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF88F154E2D4E004E9C49 /* Credits.rtf */; };
-		58BDF894154E2D4E004E9C49 /* TTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF893154E2D4E004E9C49 /* TTDocument.m */; };
-		58BDF897154E2D4E004E9C49 /* TTDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF895154E2D4E004E9C49 /* TTDocument.xib */; };
+		58BDF894154E2D4E004E9C49 /* EDLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF893154E2D4E004E9C49 /* EDLDocument.m */; };
+		58BDF897154E2D4E004E9C49 /* EDLDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF895154E2D4E004E9C49 /* EDLDocument.xib */; };
 		58BDF89A154E2D4E004E9C49 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BDF898154E2D4E004E9C49 /* MainMenu.xib */; };
+		58BDF8A2154E2E08004E9C49 /* EDL.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF8A1154E2E08004E9C49 /* EDL.m */; };
+		58BDF8AD154E37AC004E9C49 /* EDLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF8AC154E37AC004E9C49 /* EDLEvent.m */; };
+		58BDF8B0154E39D9004E9C49 /* Timecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BDF8AF154E39D9004E9C49 /* Timecode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B60B18A154E540B0004799F /* TimecodeValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimecodeValueTransformer.h; sourceTree = "<group>"; };
+		3B60B18B154E540B0004799F /* TimecodeValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimecodeValueTransformer.m; sourceTree = "<group>"; };
 		58BDF87C154E2D4D004E9C49 /* EDL Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EDL Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BDF880154E2D4D004E9C49 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		58BDF883154E2D4D004E9C49 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		58BDF884154E2D4D004E9C49 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		58BDF885154E2D4D004E9C49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		58BDF888154E2D4D004E9C49 /* EDL Tool-Info.plist */ = {isa = PBXFileReference; path = "EDL Tool-Info.plist"; sourceTree = "<group>"; };
+		58BDF888154E2D4D004E9C49 /* EDL Tool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EDL Tool-Info.plist"; sourceTree = "<group>"; };
 		58BDF88A154E2D4D004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58BDF88C154E2D4D004E9C49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		58BDF88E154E2D4E004E9C49 /* EDL Tool-Prefix.pch */ = {isa = PBXFileReference; path = "EDL Tool-Prefix.pch"; sourceTree = "<group>"; };
+		58BDF88E154E2D4E004E9C49 /* EDL Tool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EDL Tool-Prefix.pch"; sourceTree = "<group>"; };
 		58BDF890154E2D4E004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		58BDF892154E2D4E004E9C49 /* TTDocument.h */ = {isa = PBXFileReference; path = TTDocument.h; sourceTree = "<group>"; };
-		58BDF893154E2D4E004E9C49 /* TTDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTDocument.m; sourceTree = "<group>"; };
-		58BDF896154E2D4E004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TTDocument.xib; sourceTree = "<group>"; };
+		58BDF892154E2D4E004E9C49 /* EDLDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDLDocument.h; sourceTree = "<group>"; };
+		58BDF893154E2D4E004E9C49 /* EDLDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDLDocument.m; sourceTree = "<group>"; };
+		58BDF896154E2D4E004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EDLDocument.xib; sourceTree = "<group>"; };
 		58BDF899154E2D4E004E9C49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		58BDF8A0154E2E08004E9C49 /* EDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDL.h; sourceTree = "<group>"; };
+		58BDF8A1154E2E08004E9C49 /* EDL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDL.m; sourceTree = "<group>"; };
+		58BDF8AB154E37AC004E9C49 /* EDLEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDLEvent.h; sourceTree = "<group>"; };
+		58BDF8AC154E37AC004E9C49 /* EDLEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDLEvent.m; sourceTree = "<group>"; };
+		58BDF8AE154E39D9004E9C49 /* Timecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timecode.h; sourceTree = "<group>"; };
+		58BDF8AF154E39D9004E9C49 /* Timecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timecode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +96,19 @@
 		58BDF886154E2D4D004E9C49 /* EDL Tool */ = {
 			isa = PBXGroup;
 			children = (
-				58BDF892154E2D4E004E9C49 /* TTDocument.h */,
-				58BDF893154E2D4E004E9C49 /* TTDocument.m */,
-				58BDF895154E2D4E004E9C49 /* TTDocument.xib */,
+				58BDF892154E2D4E004E9C49 /* EDLDocument.h */,
+				58BDF893154E2D4E004E9C49 /* EDLDocument.m */,
+				58BDF895154E2D4E004E9C49 /* EDLDocument.xib */,
 				58BDF898154E2D4E004E9C49 /* MainMenu.xib */,
 				58BDF887154E2D4D004E9C49 /* Supporting Files */,
+				58BDF8A0154E2E08004E9C49 /* EDL.h */,
+				58BDF8A1154E2E08004E9C49 /* EDL.m */,
+				58BDF8AB154E37AC004E9C49 /* EDLEvent.h */,
+				58BDF8AC154E37AC004E9C49 /* EDLEvent.m */,
+				58BDF8AE154E39D9004E9C49 /* Timecode.h */,
+				58BDF8AF154E39D9004E9C49 /* Timecode.m */,
+				3B60B18A154E540B0004799F /* TimecodeValueTransformer.h */,
+				3B60B18B154E540B0004799F /* TimecodeValueTransformer.m */,
 			);
 			path = "EDL Tool";
 			sourceTree = "<group>";
@@ -158,7 +178,7 @@
 			files = (
 				58BDF88B154E2D4D004E9C49 /* InfoPlist.strings in Resources */,
 				58BDF891154E2D4E004E9C49 /* Credits.rtf in Resources */,
-				58BDF897154E2D4E004E9C49 /* TTDocument.xib in Resources */,
+				58BDF897154E2D4E004E9C49 /* EDLDocument.xib in Resources */,
 				58BDF89A154E2D4E004E9C49 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,7 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				58BDF88D154E2D4E004E9C49 /* main.m in Sources */,
-				58BDF894154E2D4E004E9C49 /* TTDocument.m in Sources */,
+				58BDF894154E2D4E004E9C49 /* EDLDocument.m in Sources */,
+				58BDF8A2154E2E08004E9C49 /* EDL.m in Sources */,
+				58BDF8AD154E37AC004E9C49 /* EDLEvent.m in Sources */,
+				58BDF8B0154E39D9004E9C49 /* Timecode.m in Sources */,
+				3B60B18C154E540B0004799F /* TimecodeValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,12 +218,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		58BDF895154E2D4E004E9C49 /* TTDocument.xib */ = {
+		58BDF895154E2D4E004E9C49 /* EDLDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				58BDF896154E2D4E004E9C49 /* en */,
 			);
-			name = TTDocument.xib;
+			name = EDLDocument.xib;
 			sourceTree = "<group>";
 		};
 		58BDF898154E2D4E004E9C49 /* MainMenu.xib */ = {
@@ -301,6 +325,7 @@
 				58BDF89F154E2D4E004E9C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
