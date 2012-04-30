@@ -82,7 +82,7 @@
 }
 
 -(long)absoluteTime {
-    return (long)self.frameNumber / (long)self.frameRate;
+    return (long)((double)self.frameNumber / (double)self.frameRate);
 }
 
 #pragma mark Frame Number
