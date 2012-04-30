@@ -34,7 +34,10 @@
         if (blank) {
             doneWithHeader = YES;
         }
-        else {
+        if ([trimmedLine rangeOfString:@": "].location == NSNotFound) {
+            doneWithHeader = YES;
+        }
+        if (!blank) {
             if (doneWithHeader) {
                 
                 if ([[trimmedLine substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"*"]) {
@@ -72,19 +75,27 @@
                         thisEvent.transitionDuration = [NSNumber numberWithInt:[eventTransitionDurationString intValue]];
                     }
                     
-                    NSString *eventSourceInString = [trimmedLine substringWithRange:NSMakeRange(29, 11)];
-                    thisEvent.sourceIn = [Timecode timecodeFromString:eventSourceInString framerate:24];
+                    if (trimmedLine.length > 11) {
+                        NSString *eventSourceInString = [trimmedLine substringWithRange:NSMakeRange(29, 11)];
+                        thisEvent.sourceIn = [Timecode timecodeFromString:eventSourceInString framerate:24];
+                    }
                     
-                    NSString *eventSourceOutString = [trimmedLine substringWithRange:NSMakeRange(41, 11)];
-                    thisEvent.sourceOut = [Timecode timecodeFromString:eventSourceOutString framerate:24];
+                    if (trimmedLine.length > 41) {
+                        NSString *eventSourceOutString = [trimmedLine substringWithRange:NSMakeRange(41, 11)];
+                        thisEvent.sourceOut = [Timecode timecodeFromString:eventSourceOutString framerate:24];
+                    }
                     
-                    NSString *eventRecordInString = [trimmedLine substringWithRange:NSMakeRange(53, 11)];
-                    thisEvent.recordIn = [Timecode timecodeFromString:eventRecordInString framerate:24];
-                    
-                    NSString *eventRecordOutString = [trimmedLine substringWithRange:NSMakeRange(65, 11)];
-                    thisEvent.recordOut = [Timecode timecodeFromString:eventRecordOutString framerate:24];
-                      
-                    if(thisEvent.eventIdentifier.intValue > 0) {
+                    if (trimmedLine.length > 53) {
+                        NSString *eventRecordInString = [trimmedLine substringWithRange:NSMakeRange(53, 11)];
+                        thisEvent.recordIn = [Timecode timecodeFromString:eventRecordInString framerate:24];
+                    }
+                        
+                    if (trimmedLine.length > 65) {
+                        NSString *eventRecordOutString = [trimmedLine substringWithRange:NSMakeRange(65, 11)];
+                        thisEvent.recordOut = [Timecode timecodeFromString:eventRecordOutString framerate:24];
+                    }
+                        
+                    if(thisEvent.tapeName && ![thisEvent.tapeName isEqualToString:@""]) {
                         [edl.events addObject:thisEvent];
                     }
                 }
